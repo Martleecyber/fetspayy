@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="wallet.js" defer></script>
+</head>
+<body>
+    <div class="wallet-container">
+        <!-- Header Section -->
+        <header class="tiktik">
+            <h1 id="greeting">Good Morning, [Username]</h1>
+            <div class="account-settings">
+                <button onclick="viewProfile()">Profile</button>
+                <button onclick="logout()" ><a href="./index.html" style="color: aliceblue; text-decoration: none;">Logout</a></button>
+            </div>
+        </header>
+
+        <!-- Wallet Overview -->
+        <section class="wallet-overview">
+            <div class="card-balance">
+                <p>Debit Card | Private Bank</p>
+                <h2>$<span id="wallet-balance">500</span></h2>
+            </div>
+            <div class="wallet-actions">
+                <button>Add Funds</button>
+                <button>Send Money</button>
+                <button>View Transactions</button>
+            </div>
+        </section>
+
+        <!-- Transaction History -->
+        <section class="transaction-history">
+            <h3>Recent Transactions</h3>
+            <ul>
+                <li>
+                    <p>Amazon</p>
+                    <span>$0</span>
+                </li>
+                <li>
+                    <p>Starbucks</p>
+                    <span>$0</span>
+                </li>
+                <li>
+                    <p>Venmo Transfer</p>
+                    <span>$0</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Send Money Section -->
+        <section class="send-money">
+            <h3>Send Money</h3>
+            <div class="send-options">
+                <input type="text" placeholder="Enter a name or card number">
+                <button>Send</button>
+            </div>
+        </section>
+
+        <!-- Additional Banking Features -->
+        <section class="additional-features">
+            <h3>Other Features</h3>
+            <ul>
+                <li><a href="#">Account Management</a></li>
+                <li><a href="#">Loan Services</a></li>
+                <li><a href="#">Investment Opportunities</a></li>
+                <li><a href="#">Customer Support</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
